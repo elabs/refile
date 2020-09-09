@@ -6,13 +6,13 @@ module Refile
       # @see AttachmentHelper#attachment_field
       def attachment_field(method, options = {})
         self.multipart = true
-        @template.attachment_field(@object_name, method, objectify_options(options))
+        @template.attachment_field(@object_name, method, **objectify_options(options))
       end
 
       # @see AttachmentHelper#attachment_cache_field
       def attachment_cache_field(method, options = {})
         self.multipart = true
-        @template.attachment_cache_field(@object_name, method, objectify_options(options))
+        @template.attachment_cache_field(@object_name, method, **objectify_options(options))
       end
     end
 
