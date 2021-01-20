@@ -26,3 +26,5 @@ s3.yml
 spec/refile/test_app/log
 spec/refile/test_app/tmp
 spec/refile/test_app/db/*.sqlite
+
+.idea

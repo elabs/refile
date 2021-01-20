@@ -85,8 +85,8 @@ module Refile
         define_method "remote_#{name}_url" do
         end
 
-        define_method "#{name}_url" do |*args|
-          Refile.attachment_url(self, name, *args)
+        define_method "#{name}_url" do |**args|
+          Refile.attachment_url(self, name, **args)
         end
 
         define_method "presigned_#{name}_url" do |expires_in = 900|
